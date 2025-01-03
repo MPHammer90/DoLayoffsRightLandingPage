@@ -64,23 +64,4 @@ body {
 
 .features h2 {
     font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #f0fefb; /* Primary Color */
-}
-
-.features .feature-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.feature-card {
-    flex: 1;
-    min-width: 280px;
-    max-width: 350px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 4px 
+    margin-bottom:
