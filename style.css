@@ -25,11 +25,12 @@ body {
 /* Hero Section */
 .hero {
     width: 100%;
-    background: linear-gradient(135deg, #f0fefb, #d3bafa); /* Primary and Secondary Colors */
+    background-color: #d3bafa; /* Use the rightmost color as a solid background */
     color: white;
     text-align: center;
     padding: 80px 20px;
 }
+
 
 .hero h1 {
     font-size: 3rem;
@@ -42,7 +43,7 @@ body {
 }
 
 .hero .cta-button {
-    background-color: #d3bafa; /* Secondary Color */
+    background-color: #f0fefb; /* Primary green color */
     color: #202124;
     padding: 15px 30px;
     text-decoration: none;
@@ -52,8 +53,9 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #bda6f0;
+    background-color: #d3deda; /* A slightly darker shade of the green, optional */
 }
+
 
 /* Features Section */
 .features {
