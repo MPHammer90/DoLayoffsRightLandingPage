@@ -25,7 +25,7 @@ body {
 /* Hero Section */
 .hero {
     width: 100%;
-    background-color: #d3bafa; /* Solid secondary color */
+    background: linear-gradient(135deg, #f0fefb, #d3bafa); /* Gradient restored */
     color: white;
     text-align: center;
     padding: 80px 20px;
@@ -42,7 +42,7 @@ body {
 }
 
 .hero .cta-button {
-    background-color: #f0fefb; /* Primary green color */
+    background-color: #d3bafa; /* Secondary color */
     color: #202124;
     padding: 15px 30px;
     text-decoration: none;
@@ -52,7 +52,7 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #d3deda; /* Slightly darker green for hover effect */
+    background-color: #bda6f0;
 }
 
 /* Features Section */
@@ -64,4 +64,74 @@ body {
 
 .features h2 {
     font-size: 2.5rem;
-    margin-bottom:
+    margin-bottom: 30px;
+    color: #f0fefb; /* Primary Color */
+}
+
+.features .feature-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+    color: #d3bafa; /* Secondary Color */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 60px 20px;
+    background-color: #f1f1f1;
+}
+
+.faq h2 {
+    text-align: center;
+    color: #f0fefb; /* Primary Color */
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    cursor: pointer;
+    color: #f0fefb; /* Primary Color */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    display: none;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    background-color: #d3bafa; /* Secondary Color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
