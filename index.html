@@ -3,64 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Procee Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Landing Page</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            color: #202124;
+            background-color: #ffffff;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            width: 100%;
+            background: linear-gradient(135deg, #f0fefb, #d3bafa); /* Primary and Secondary Colors */
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .cta-button {
+            background-color: #d3bafa; /* Secondary Color */
+            color: #202124;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: #bda6f0;
+        }
+
+        /* Features Section */
+        .features {
+            margin-top: 50px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #f0fefb; /* Primary Color */
+        }
+
+        .features .feature-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .feature-card {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card h3 {
+            color: #d3bafa; /* Secondary Color */
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 60px 20px;
+            background-color: #f1f1f1;
+        }
+
+        .faq h2 {
+            text-align: center;
+            color: #f0fefb; /* Primary Color */
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item h3 {
+            cursor: pointer;
+            color: #f0fefb; /* Primary Color */
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            display: none;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            background-color: #d3bafa; /* Secondary Color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="hero">
-        <div class="container">
-            <h1>Welcome to Procee</h1>
-            <p>Your tagline goes here.</p>
-            <a href="#features" class="cta-button">Learn More</a>
-        </div>
-    </header>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to Your New Landing Page</h1>
+        <p>Streamline your online presence with a clean and modern design.</p>
+        <a href="#features" class="cta-button">Get Started</a>
+    </div>
 
     <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2>Our Features</h2>
-            <div class="feature-list">
-                <div class="feature-item">
-                    <h3>Feature One</h3>
-                    <p>Brief description of feature one.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>Feature Two</h3>
-                    <p>Brief description of feature two.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>Feature Three</h3>
-                    <p>Brief description of feature three.</p>
-                </div>
+    <section class="features">
+        <h2>Key Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Feature One</h3>
+                <p>Description of the first feature.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Feature Two</h3>
+                <p>Description of the second feature.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Feature Three</h3>
+                <p>Description of the third feature.</p>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <h3>What is Procee?</h3>
-                <p>Answer to the question.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How does it work?</h3>
-                <p>Answer to the question.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How can I get started?</h3>
-                <p>Answer to the question.</p>
-            </div>
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What is this page about?</h3>
+            <p>A brief description of the purpose of this landing page.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I customize it?</h3>
+            <p>Details about customization options.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I use my own colors?</h3>
+            <p>Explanation about how to modify the color palette.</p>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Procee. All rights reserved.</p>
-        </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Brand Name. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-item h3').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                const answer = parent.querySelector('p');
+
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
