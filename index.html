@@ -46,4 +46,29 @@
         </div>
         <div class="faq-item">
             <h3>Can I use my own colors?</h3>
-            <p>Explanation about how to modify the color 
+            <p>Explanation about how to modify the color palette.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Brand Name. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-item h3').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                const answer = parent.querySelector('p');
+
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
