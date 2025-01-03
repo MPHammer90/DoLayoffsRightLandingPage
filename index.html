@@ -4,7 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            color: #202124;
+            background-color: #ffffff;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            width: 100%;
+            background: linear-gradient(135deg, #f0fefb, #d3bafa); /* Primary and Secondary Colors */
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .cta-button {
+            background-color: #d3bafa; /* Secondary Color */
+            color: #202124;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: #bda6f0;
+        }
+
+        /* Features Section */
+        .features {
+            margin-top: 50px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #f0fefb; /* Primary Color */
+        }
+
+        .features .feature-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .feature-card {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card h3 {
+            color: #d3bafa; /* Secondary Color */
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 60px 20px;
+            background-color: #f1f1f1;
+        }
+
+        .faq h2 {
+            text-align: center;
+            color: #f0fefb; /* Primary Color */
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item h3 {
+            cursor: pointer;
+            color: #f0fefb; /* Primary Color */
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            display: none;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            background-color: #d3bafa; /* Secondary Color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <!-- Hero Section -->
